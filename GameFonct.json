@@ -1,5 +1,11 @@
 {
-    "DelayEnvoieFumee":"10",
-    "DelayCycle":"15",
+    "DelayONSequence1":"10",
+    "DelayOFFSequence1":"20",
+    "DelayONSequence2":"30",
+    "DelayOFFSequence2":"25",
+    "DelayONSequence3":"5",
+    "DelayOFFSequence3":"5",
+    "DelayONSequence4":"10",
+    "DelayOFFSequence4":"15",
     "DelaySetup":"5"
 }

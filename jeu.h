@@ -14,13 +14,14 @@ public:
     // QThread interface
     //bool checkVictoryCondition();
     virtual bool Game_Success();
-    static void Pushfumee();
     void loadConfigGameFonct(QString config_file);
     void loadConfigGameTech(QString config_file);
-    void Setupfumee();
-    static void Interupt();
+    void Setup();
 protected:
     virtual void exec() override;
+public slots:
+    static void InteruptGeneral();
+    void InteruptSequence(int numSeq);
 
 
 };
