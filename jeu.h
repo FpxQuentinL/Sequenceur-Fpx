@@ -5,6 +5,7 @@
 #include <QTime>
 
 
+
 class Jeu : public IPlugins
 {
     Q_OBJECT
@@ -14,13 +15,18 @@ public:
     // QThread interface
     //bool checkVictoryCondition();
     virtual bool Game_Success();
-    static void Pushfumee();
+    QString _AudioPath;
     void loadConfigGameFonct(QString config_file);
     void loadConfigGameTech(QString config_file);
-    void Setupfumee();
-    static void Interupt();
+    void Setup();
 protected:
     virtual void exec() override;
+public slots:
+    static void InteruptGeneral();
+    void InteruptSequence(int numSeq);
+signals:
+    void Sig_Audio(QString);
+
 
 
 };

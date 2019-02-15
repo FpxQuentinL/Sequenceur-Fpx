@@ -1,6 +1,6 @@
 {
-    "Cycle":"23",
-    "BoutonActive":"24",
-    "EnvoiFum":"26",
-    "Interupt":"12"
+    "ControlerSeq2":"20",
+    "ControlerSeq1":"21",
+    "Interupt":"16",
+    "Cycle":"1"
 }

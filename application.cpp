@@ -89,12 +89,12 @@ void Application::initialize()
         return;
 
 
-//    if( !_audioController )
-//    {
-//        _audioController = new AudioController();
-//    }
+   if( !_audioController )
+   {
+       _audioController = new AudioController();
+   }
 
-//    _audioController->playSound( "/home/pi/SampleAudio_0.7mb.mp3" );
+
 
     if( !_server )
     {
@@ -107,4 +107,5 @@ void Application::initialize()
     _listPlugins.first()->setDifficulty( IPlugins::Difficulty::easy );
     //while (42) // JE SUIS PAS SUR QUE CE SOIT PAS BLOCAN !!!!
     _listPlugins.first()->start();
+    connect(_listPlugins.first(),SIGNAL(Sig_Audio(QString)),_audioController,SLOT(playSound(QString)));
 }

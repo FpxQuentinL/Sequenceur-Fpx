@@ -11,14 +11,12 @@ class AudioController : public QObject
 
 public:
     AudioController(QObject *parent = 0);
-
-signals:
-
 public slots:
     void playSound( QString path );
 
+    void testSlot();
 protected:
-    QMediaPlayer _player;
+    QMediaPlayer *_player;
 };
 
 #endif // AUDIOCONTROLLER_H
