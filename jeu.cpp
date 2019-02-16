@@ -310,7 +310,7 @@ void Jeu::exec()
             }
          }
 
-        delay(2);
+        delay(0.5);
 
 
 
